@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/secspace.git]
+checkout = vcsh clone git@gitlab.com:fakhraee/secspace.git secspace

@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/lfm.git]
+checkout = vcsh clone git://github.com/fakhraee/dot-lfm.git lfm

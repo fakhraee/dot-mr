@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/keepassx.git]
+checkout = vcsh clone git@gitlab.com:fakhraee/dot-keepassx.git keepassx

@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/wiki.git]
+checkout = vcsh clone git@gitlab.com:fakhraee/wiki.git wiki

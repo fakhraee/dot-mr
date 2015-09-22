@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/screen.git]
+checkout = vcsh clone git://github.com/fakhraee/dot-screen.git screen

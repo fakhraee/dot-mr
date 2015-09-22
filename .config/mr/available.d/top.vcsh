@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/top.git]
+checkout = vcsh clone git://github.com/fakhraee/dot-top.git top
