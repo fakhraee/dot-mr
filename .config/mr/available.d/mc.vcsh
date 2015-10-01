@@ -1,2 +1,2 @@
 [$HOME/.config/vcsh/repo.d/mc.git]
-checkout = vcsh clone git://github.com/fakhraee/dot-mc.git mc
+checkout = vcsh clone https://github.com/fakhraee/dot-mc.git mc

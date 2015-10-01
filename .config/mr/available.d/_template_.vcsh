@@ -1,2 +1,2 @@
 [$HOME/.config/vcsh/repo.d/template.git]
-checkout = vcsh clone git://github.com/fakhraee/dot-template.git template
+checkout = vcsh clone https://github.com/fakhraee/dot-template.git template
