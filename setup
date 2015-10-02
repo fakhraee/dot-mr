@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+cd $HOME
+
+home_setup() {
+	mkdir -p -v mnt/secspace opt var/{syncity,dl} tmp
+}
+
+package_install() {
+	apt install ssh htop tree git tmux screen vcsh mr keepassx zsh mc lfm zim
+}
+
+desktop() {
+
+}
+
+laptop() {
+}
+
+notmine() {
+}
+
+vcsh clone https://gitlab.com/fakhraee/dot-mr.git mr
