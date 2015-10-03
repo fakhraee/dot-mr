@@ -7,17 +7,20 @@ home_setup() {
 }
 
 package_install() {
-	apt install ssh htop tree git tmux screen vcsh mr keepassx zsh mc lfm zim
+	apt install ssh htop tree git tmux screen vcsh mr keepassx zsh mc lfm zim python-pip
+	sudo pip install --system py3status
 }
 
 desktop() {
-
+	echo "choose i3 config for desktop"
 }
 
 laptop() {
+	echo "choose i3 config for laptop"
 }
 
 notmine() {
+	echo "take care"
 }
 
-vcsh clone https://gitlab.com/fakhraee/dot-mr.git mr
+#vcsh clone https://gitlab.com/fakhraee/dot-mr.git mr
