@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/bing.git]
-checkout = vcsh clone https://github.com/fakhraee/bing-wallpapers-for-linux.git bing

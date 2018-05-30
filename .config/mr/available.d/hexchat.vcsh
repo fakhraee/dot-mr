@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/hexchat.git]
-checkout = vcsh clone git@gitlab.com:fakhraee/dot-hexchat.git hexchat

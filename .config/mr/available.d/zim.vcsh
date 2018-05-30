@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/zim.git]
-checkout = vcsh clone git@gitlab.com:fakhraee/dot-zim.git zim

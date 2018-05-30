@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/mpd.git]
+checkout = vcsh clone https://github.com/fakhraee/dot-mpd mpd

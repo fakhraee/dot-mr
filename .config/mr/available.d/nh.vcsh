@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/nh.git]
+checkout = vcsh clone git@gitlab.com:fakhraee/dot-nh.git nh

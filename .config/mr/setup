@@ -3,12 +3,14 @@
 cd $HOME
 
 home_setup() {
-	mkdir -p -v mnt/secspace opt var/{syncity,dl} tmp
+	mkdir -p -v bin $HOME/mnt/cry opt/w32 $HOME/var/{dl,git} tmp
 }
 
 package_install() {
-	apt install ssh htop tree git tmux screen vcsh mr keepassx zsh mc lfm zim python-pip
-	sudo pip install --system py3status
+	sudo apt install ssh htop tree git tmux screen vcsh mr cryfs zsh mc zim grc \
+                   xtail neovim neomutt libterm-extendedcolor-perl proxychins \
+                   tor highlight libnotify-bin remmina remmina-plugin-rdp \
+                   libfribidi-bin kbdd rxvt-unicode mpd colordiff whois
 }
 
 desktop() {

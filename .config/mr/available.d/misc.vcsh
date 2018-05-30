@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/misc.git]
+checkout = vcsh clone https://github.com/fakhraee/dot-misc.git misc
