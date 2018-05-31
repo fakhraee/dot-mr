@@ -1,28 +1,24 @@
 #!/usr/bin/env bash
 
-cd $HOME
+# make dirs
+mkdir -p -v bin $HOME/mnt/cry opt/w32 $HOME/var/{dl,git} tmp
 
-home_setup() {
-	mkdir -p -v bin $HOME/mnt/cry opt/w32 $HOME/var/{dl,git} tmp
-}
+# instal packages
+sudo apt install ssh htop tree git tmux screen vcsh mr cryfs zsh mc zim grc \
+  xtail neovim neomutt libterm-extendedcolor-perl proxychins \
+  tor highlight libnotify-bin remmina remmina-plugin-rdp \
+  libfribidi-bin kbdd rxvt-unicode mpd colordiff whois
 
-package_install() {
-	sudo apt install ssh htop tree git tmux screen vcsh mr cryfs zsh mc zim grc \
-                   xtail neovim neomutt libterm-extendedcolor-perl proxychins \
-                   tor highlight libnotify-bin remmina remmina-plugin-rdp \
-                   libfribidi-bin kbdd rxvt-unicode mpd colordiff whois
-}
+# clone mr and others
+vcsh clone https://github.com/fakhraee/dot-mr.git mr && mr up
 
-desktop() {
-	echo "choose i3 config for desktop"
-}
+# get grml zsh conf
+wget -O "$HOME/.zshrc.grml" https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 
-laptop() {
-	echo "choose i3 config for laptop"
-}
+# install source code pro font
+git clone --depth 1 --branch release \
+https://github.com/adobe-fonts/source-code-pro.git \
+~/.fonts/adobe-fonts/source-code-pro
+fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
 
-notmine() {
-	echo "take care"
-}
-
-#vcsh clone https://gitlab.com/fakhraee/dot-mr.git mr
+# gpg import and trust
