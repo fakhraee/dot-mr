@@ -9,8 +9,8 @@ sudo apt install ssh htop tree git tmux screen vcsh mr cryfs zsh mc zim grc \
   tor highlight libnotify-bin remmina remmina-plugin-rdp \
   libfribidi-bin kbdd rxvt-unicode mpd colordiff whois
 
-# clone mr and others
-vcsh clone https://github.com/fakhraee/dot-mr.git mr && mr up
+# mr
+mr up
 
 # get grml zsh conf
 wget -O "$HOME/.zshrc.grml" https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
