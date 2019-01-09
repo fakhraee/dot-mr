@@ -1,2 +1,2 @@
-[$HOME/.config/vcsh/repo.d/weechat.git]
-checkout = vcsh clone https://github.com/fakhraee/dot-neomutt neomutt
+[$HOME/.config/vcsh/repo.d/neomutt.git]
+checkout = vcsh clone git@gitlab.com:fakhraee/dot-neomutt.git neomutt
