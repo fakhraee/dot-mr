@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/v12n.wiki.git]
+checkout = vcsh clone git@g.fakhraee.info:doc/v12n.wiki.git v12n.wiki

@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/wip.wiki.git]
+checkout = vcsh clone git@g.fakhraee.info:doc/wip.wiki.git wip.wiki
