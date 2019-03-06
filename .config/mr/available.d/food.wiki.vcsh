@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/food.wiki.git]
+checkout = vcsh clone git@g.fakhraee.info:doc/food.wiki.git food.wiki
