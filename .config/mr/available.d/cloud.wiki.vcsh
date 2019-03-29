@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/cloud.wiki.git]
-checkout = vcsh clone git@g.fakhraee.info:doc/cloud.wiki.git cloud.wiki

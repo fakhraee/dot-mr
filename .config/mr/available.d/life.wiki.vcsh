@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/life.wiki.git]
-checkout = vcsh clone git@g.fakhraee.info:doc/life.wiki.git life.wiki

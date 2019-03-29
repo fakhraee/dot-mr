@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/doc.git]
+checkout = vcsh clone git@g.fakhraee.info:doc/doc.git doc

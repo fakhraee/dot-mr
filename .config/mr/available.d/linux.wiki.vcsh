@@ -1,2 +1,0 @@
-[$HOME/.config/vcsh/repo.d/linux.wiki.git]
-checkout = vcsh clone git@g.fakhraee.info:doc/linux.wiki.git linux.wiki
