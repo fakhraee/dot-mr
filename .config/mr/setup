@@ -7,10 +7,22 @@ make_dirs() {
 
 
 install_packages() {
-  sudo apt install -y ssh htop tree git tmux screen vcsh mr cryfs zsh mc tor \
+  sudo apt install -y ssh htop tree git tmux screen vcsh mr cryfs fish mc tor \
   grc xtail neovim neomutt libterm-extendedcolor-perl proxychains highlight \
-  libnotify-bin libfribidi-bin kbdd rxvt-unicode mpd colordiff whois autojump \
+  libnotify-bin libfribidi-bin kbdd rxvt-unicode mpd colordiff whois \
   i3 i3blocks mlterm xorg lightdm pulseaudio pavucontrol asciinema
+}
+
+lsd() {
+  echo 'installing lsd'
+  lsd_file=$(mktemp)
+  lsd_url="$(curl --silent --location \
+                  https://github.com/Peltoche/lsd/releases/latest | \
+              awk '/amd64.deb"/ { gsub("\"",""); \
+                                  gsub("href=","https://github.com"); \
+                                  print $2}')"
+  curl --location "${lsd_url}" --output ${lsd_file} && \
+  sudo dpkg --install ${lsd_file} && rm -f ${lsd_file}
 }
 
 
@@ -19,18 +31,19 @@ config_stuff() {
   sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvt
   sudo chsh -s /bin/zsh $USER
 
-  # mr
+# mr
   vcsh clone https://github.com/fakhraee/dot-mr mr
   mr up
 
-  # get grml zsh conf
+# get grml zsh conf
   wget -O "$HOME/.zshrc.grml" https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 
-  # install source code pro font
-  git clone --depth 1 --branch release \
-  https://github.com/adobe-fonts/source-code-pro.git \
-  $HOME/.fonts/adobe-fonts/source-code-pro
-  fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
+# install source code pro font --------------{{{
+  #git clone --depth 1 --branch release \
+  #https://github.com/adobe-fonts/source-code-pro.git \
+  #$HOME/.fonts/adobe-fonts/source-code-pro
+  #fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
+#}}}
 
 
   # clone liquidprompt
@@ -45,7 +58,12 @@ config_stuff() {
 
 # gpg import and trust
 
-
+main() {
 make_dirs
 install_packages
 config_stuff
+
+}
+# todo
+# https://github.com/jwilm/alacritty/releases
+# curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
